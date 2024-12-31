@@ -1,0 +1,53 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400,0,700,0,700,0,400,0,400&display=swap');
+
+/* Coollabs GDPR Compliant Google Fonts */
+@import url('https://api.fonts.coollabs.io/css2?family=Balsamiq+Sans:ital,wght@0,400,0,700,0,700,0,400,0,400&display=swap');
+
+:root {
+    --color-primary_dark: #10451dff; 
+    --color-primary_mid: #155d27ff; 
+    --color-primary_light: #1a7431ff; 
+    --color-primary_lighter: #208b3aff; 
+    --color-secondary_dark: #25a244ff; 
+    --color-secondary_mid: #2dc653ff; 
+    --color-secondary_light: #4ad66dff; 
+    --color-heading_dark: #6ede8aff; 
+    --color-heading_light: #92e6a7ff; 
+    --color-bg_main: #b7efc5ff; 
+  }
+  
+  .heading_first {
+    font-family: 'Balsamiq Sans';
+    font-size: 4rem; /* 64px */
+    font-weight: 400; 
+    line-height: 96px;
+  }
+  
+  .heading_second {
+    font-family: 'Balsamiq Sans';
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700; 
+    line-height: 60px;
+  }
+  
+  .heading_third {
+    font-family: 'Balsamiq Sans';
+    font-size: 1.5625rem; /* 25px */
+    font-weight: 700; 
+    line-height: 37.5px;
+  }
+  
+  .body_common {
+    font-family: 'Balsamiq Sans';
+    font-size: 1rem; /* 16px */
+    font-weight: 400; 
+    line-height: 24px;
+  }
+  
+  .body_main {
+    font-family: 'Balsamiq Sans';
+    font-size: 1rem; /* 16px */
+    font-weight: 700; 
+    line-height: 24px;
+  }
