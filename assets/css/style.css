@@ -1,8 +1,18 @@
+/* div with position relative and a child with possition absolute upon load of website the childl will come from left and right to create a cool effect  */
+/* landing blog first
+ https://www.discovery.com/nature/2023/y/look-back-at-nature-in-focus-adventures-in-2022 */
+ /* landing blog second
+ https://www.discovery.com/nature/channel-islands
+   */
+
+/* Fonts Import */
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400,0,700,0,700,0,400,0,400&display=swap');
 
 /* Coollabs GDPR Compliant Google Fonts */
 @import url('https://api.fonts.coollabs.io/css2?family=Balsamiq+Sans:ital,wght@0,400,0,700,0,700,0,400,0,400&display=swap');
+
+/* Variables for colors */
 
 :root {
     --color-primary_dark: #10451dff; 
@@ -15,51 +25,234 @@
     --color-heading_dark: #6ede8aff; 
     --color-heading_light: #92e6a7ff; 
     --color-bg_main: #b7efc5ff; 
-  }
+    --color-def_main: #fff;
+}
   
-  .heading_first {
-    font-family: 'Balsamiq Sans';
-    font-size: 4rem; /* 64px */
-    font-weight: 400; 
-    line-height: 96px;
-  }
-  
-  .heading_second {
-    font-family: 'Balsamiq Sans';
-    font-size: 2.5rem; /* 40px */
-    font-weight: 700; 
-    line-height: 60px;
-  }
-  
-  .heading_third {
-    font-family: 'Balsamiq Sans';
-    font-size: 1.5625rem; /* 25px */
-    font-weight: 700; 
-    line-height: 37.5px;
-  }
-  
-  .body_common {
-    font-family: 'Balsamiq Sans';
-    font-size: 1rem; /* 16px */
-    font-weight: 400; 
-    line-height: 24px;
-  }
-  
-  .body_main {
-    font-family: 'Balsamiq Sans';
-    font-size: 1rem; /* 16px */
-    font-weight: 700; 
-    line-height: 24px;
-  }
+/* typography  */
+
+.heading_first {
+  font-family: 'Balsamiq Sans';
+  font-size: 4rem; /* 64px */
+  font-weight: 400; 
+  line-height: 96px;
+}
+
+.heading_second {
+  font-family: 'Balsamiq Sans';
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700; 
+  line-height: 60px;
+}
+
+.heading_third {
+  font-family: 'Balsamiq Sans';
+  font-size: 1.5625rem; /* 25px */
+  font-weight: 700; 
+  line-height: 37.5px;
+}
+
+.body_common {
+  font-family: 'Balsamiq Sans';
+  font-size: 1rem; /* 16px */
+  font-weight: 400; 
+  line-height: 24px;
+}
+
+.body_main {
+  font-family: 'Balsamiq Sans';
+  font-size: 1rem; /* 16px */
+  font-weight: 700; 
+  line-height: 24px;
+}
+
+/* Components  */
+
+.Button_First {
+  background-color: var(--color-secondary_dark);
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.Button_Anchor {
+  position: relative;
+  text-decoration: none;
+}
 
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Main Css  */
 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-def_main);
+}
 
-  body {
-    background-color: var(--color-bg_main);
+body {
+  background-color: var(--color-bg_main);
+}
+   
+/* Header Section  Styles*/
+
+header {
+  width: 100%;
+  padding: 2px 120px;
+  background-color: var(--color-primary_dark);
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.Logo_Container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+
+
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.Header_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav {
+  padding: 2px;
+
+}
+
+.list_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 157.65px;
+
+}
+
+.anchor_container a  {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero Section Styles */
+
+.Hero_Section {
+  padding: 0 120px;
+  width: 100%;
+  height: 34.875rem;
+  background-color: #fff;
+  background-image: url("../img/hero_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+
+.Hero_Section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.tile_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Position_Animate {
+  position: relative;
+  transition: 0.4s ease-in-out all;
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Hero_Text_Container {
+  width: 37.313rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transform: translateX(-100%); 
+  animation: slideIn 1.5s ease-out forwards; 
+}
+
+.Hero_Title {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  animation: typewriter 2s steps(30) forwards; 
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+
+.Hero_Text_Color {
+  color: var(--color-heading_dark);
+
+}
+
+@keyframes typewriter {
+  from {
+      width: 0;
   }
+  to {
+      width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0); 
+  }
+}
+
+
+
+
+
