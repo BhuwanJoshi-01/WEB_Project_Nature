@@ -144,6 +144,10 @@ img {
   color: white;
 }
 
+.anchor_container a:hover {
+  color: var(--color-primary_dark);
+}
+
 
 
 
