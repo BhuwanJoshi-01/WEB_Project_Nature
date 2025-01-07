@@ -225,6 +225,9 @@ img {
 
 }
 
+
+
+/* typewariter animation */
 @keyframes typewriter {
   from {
       width: 0;
@@ -250,7 +253,7 @@ img {
 
 
 
-
+/* slide in for containers */
 @keyframes slideIn {
   0% {
       transform: translateX(-100%);
