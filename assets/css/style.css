@@ -81,6 +81,38 @@
 }
 
 
+
+/* test purpose */
+.tile_wrap {
+  border: 2px red solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Main Css  */
 
 * {
@@ -227,6 +259,11 @@ img {
 
 
 
+
+
+
+
+
 /* typewariter animation */
 @keyframes typewriter {
   from {
@@ -236,20 +273,6 @@ img {
       width: 100%; 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
