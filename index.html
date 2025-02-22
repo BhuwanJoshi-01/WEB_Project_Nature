@@ -7,6 +7,9 @@
     <title>Nature</title>
     <link rel="website icon" href="favicon.ico" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="website icon" href="../img/web-icon.jpg">
+
 </head>
 
 <body>
@@ -17,22 +20,28 @@
                 <div class="Logo-Container">
                     <img src="./assets/img/Header_LOGO.png" alt="Not Found" />
                 </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <nav class="nav">
                     <ul class="list-container">
                         <li class="anchor-container">
-                            <a href="index.html" class="nav-link body-main">Home</a>
+                            <a href="./index.html" class="nav-link body-main">Home</a>
                         </li>
                         <li class="anchor-container">
                             <a href="./assets/pages/about.html" class="nav-link body-main">About</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Gallery</a>
+                            <a href="./assets/pages/gallery.html" class="nav-link body-main">Gallery</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Blogs</a>
+                            <a href="./assets/pages/blogs.html" class="nav-link body-main">Blogs</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Contacts</a>
+                            <a href="./assets/pages/contact.html" class="nav-link body-main">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,7 +49,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="landing">
         <!-- Hero Section -->
         <div class="Hero-Section container">
             <div class="tile-wrap">
@@ -49,7 +58,8 @@
                         <h1 class="Hero-Title heading-first">
                             <span class="line">
                                 <span class="Hero-Text-Color">Discover</span> the Beauty</span><span class="line">of
-                                Earth's <span class="Hero-Text-Color">Wonders</span></span>
+                                Earth's <span class="Hero-Text-Color">Wonders</span>
+                            </span>
                         </h1>
                         <a href="#" class="Button-Anchor"><button class="Button-First body-main">
                                 View the Gallery
@@ -63,7 +73,7 @@
             About Preview
         </h1>
         <!-- About Preview -->
-        <div class="About-Section container">
+        <div class="About-Section ">
             <div class="tile-wrap">
                 <div class="section1-contianer">
                     <img src="./assets/img/about_preview_sectionn1.jpg" alt="Not available" />
@@ -108,36 +118,36 @@
             </p>
         </div>
 
-        <div class="highlight container">
+        <div class="highlight">
             <div class="tile-wrap">
                 <div class="highlight-container">
                     <div class="image-gallery">
                         <div class="highlight-container-first">
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section1_img1.jpg" />
-                                <p class="heading-third">Starlit Mountain Peaks</p>
+                                <h3 class="heading-third">Starlit Mountain Peaks</h3>
                             </div>
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section1_img2.jpg" />
-                                <p class="heading-third">Golden Horizon</p>
+                                <h3 class="heading-third">Golden Horizon</h3>
                             </div>
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section1_img3.jpg" />
-                                <p class="heading-third">Tranquil Alpine Lake</p>
+                                <h3 class="heading-third">Tranquil Alpine Lake</h3>
                             </div>
                         </div>
                         <div class="highlight-container-second">
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section2_img1.jpg" />
-                                <p class="heading-third">Blooming Beauty</p>
+                                <h3 class="heading-third">Blooming Beauty</h3>
                             </div>
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section2_img2.jpg" />
-                                <p class="heading-third">Aurora Skies</p>
+                                <h3 class="heading-third">Aurora Skies</h3>
                             </div>
                             <div class="image-container">
                                 <img class="img" src="./assets/img/highlight_section2_img3.jpg" />
-                                <p class="heading-third">Canyon Trails</p>
+                                <h3 class="heading-third">Canyon Trails</h3>
                             </div>
                         </div>
                     </div>
@@ -159,7 +169,7 @@
             </p>
         </div>
 
-        <div class="latest-insight container">
+        <div class="latest-insight">
             <div class="tile-wrap">
                 <div class="blog-container">
                     <div class="blog_first">
@@ -251,6 +261,7 @@
                             <a href="#" class="Button-Anchor"><button class="Button-First body-main">
                                     Get Involved
                                 </button></a>
+                                <i class="ri-leaf-fill"></i>
                         </div>
                     </div>
                 </div>
@@ -266,7 +277,7 @@
                 <div class="section-container">
                     <div class="cards">
                         <div class="text-container">
-                            <div class="icon-container"></div>
+                            <div class="icon-container"><i class="ri-heart-3-fill"></i></div>
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: #fff;">Earthly Wonders inspired me to reconnect
                                     with nature. The breathtaking gallery and insightful blogs are a true gift.</h3>
@@ -276,7 +287,7 @@
                     </div>
                     <div class="cards">
                         <div class="text-container">
-                            <div class="icon-container"></div>
+                            <div class="icon-container"><i class="ri-earth-fill"></i></div>
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: #fff;">This website rekindled my passion for
                                     conservation. Every story here is a reminder of the beauty we must protect.</h3>
@@ -286,7 +297,7 @@
                     </div>
                     <div class="cards">
                         <div class="text-container">
-                            <div class="icon-container"></div>
+                            <div class="icon-container"><i class="ri-drop-fill"></i></div>
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: #fff;">In every walk with nature, one receives
                                     far more than he seeks.</h3>
@@ -324,19 +335,19 @@
                     <nav>
                         <ul class="list-container">
                             <li class="anchor-container">
-                                <a href="index.html" class="nav-link body-common">Home</a>
+                                <a href="./index.html" class="nav-link body-common">Home</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">About</a>
+                                <a href="./assets/pages/about.html" class="nav-link body-common">About</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Gallery</a>
+                                <a href="./assets/pages/gallery.html" class="nav-link body-common">Gallery</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Blogs</a>
+                                <a href="./assets/pages/blogs.html" class="nav-link body-common">Blogs</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Contacts</a>
+                                <a href="./assets/pages/contact.html" class="nav-link body-common">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -356,7 +367,9 @@
                 <div class="social-navigation">
                     <p class="body-main">Social Media Links</p>
                     <div class="icon">
-
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-facebook-circle-fill"></i>
+                        <i class="ri-whatsapp-line"></i>
                     </div>
                 </div>
                 <hr>
@@ -368,7 +381,7 @@
                     <a href="#" class="Button-Anchor"><button class="Button-First body-main">Subscribe</button></a>
                 </div>
             </div>
-            <hr>
+            <hr class="visible">
             <div class="footer-lower">
                 <p class="body-common">
                     © 2025 Earthly Wonders. All Rights Reserved.

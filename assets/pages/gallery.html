@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="website icon" href="../img/web-icon.jpg">
 </head>
 
 <body>
@@ -15,22 +17,28 @@
                 <div class="Logo-Container">
                     <img src="../img/Header_LOGO.png" alt="Not Found" />
                 </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <nav class="nav">
                     <ul class="list-container">
                         <li class="anchor-container">
-                            <a href="index.html" class="nav-link body-main">Home</a>
+                            <a href="../../index.html" class="nav-link body-main">Home</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/about.html" class="nav-link body-main">About</a>
+                            <a href="./about.html" class="nav-link body-main">About</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Gallery</a>
+                            <a href="./gallery.html" class="nav-link body-main">Gallery</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Blogs</a>
+                            <a href="./blogs.html" class="nav-link body-main">Blogs</a>
                         </li>
                         <li class="anchor-container">
-                            <a href="./assets/pages/" class="nav-link body-main">Contacts</a>
+                            <a href="./contact.html" class="nav-link body-main">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,13 +58,13 @@
                     <h1 class="heading-first">Amazing Nature Wonders</h1>
                 </div>
                 <div class="row-section">
-                    <div class="image-portrait"></div>
-                    <div class="image-portrait"></div>
-                    <div class="image-portrait"></div>
-                    <div class="image-portrait"></div>
+                    <div class="image-portrait"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#4ad66dff" d="M357.676 20.387q-3.917.014-7.856.29c-63.314 4.438-131.13 58.006-142.117 130.253L494 162.992V89.656c-8.09-7.792-16.415-15.25-24.953-22.177c-34.59-28.067-72.195-47.234-111.37-47.093zM125.55 40.812C89.363 40.94 51.743 55.725 18 86.825v81.3l172.107-18.815l-.363-.054c3.872-26.688 14.327-50.957 29.162-71.742c-26.973-24.13-59.536-36.82-93.357-36.7zm110.263 129.514c-24.49-.258-109.87 12.136-109.602 27.078c.46 25.55 104.433 51.553 94.726 53.018C122.553 265.27 67.968 265.427 35.34 295.2c-38.914 35.507 214.983 80.92 184.422 89.687c-57.204 16.412-107.82 36.256-109.002 88.414c-.17 7.52.8 14.385 2.705 20.7h54.945c-15.423-20.635-24.05-40.664-14.6-45.912c10.413 15.107 22.492 31.126 36.174 45.912h64.286c-19.474-9.912-51.732-29.408-50.594-49.424c1.6-28.17 66.37-47.758 69.883-47.758c0 0-48.786 26.384-49.867 49.866c-.767 16.68 22.317 36.985 35.69 47.316h51.976c-16.454-12.325-26.478-24.92-20.426-31.885c15.54 11.066 33.115 22.438 51.826 31.885h106.717c-56.74-15.988-102.683-32.67-115.225-53.127c-10.196-16.63 72.362-27.836 60.408-78.902c-5.79-24.738-58.24-41.094-203.222-62.626c-25.368-3.768 134.358-19.456 129.818-57.11c-2.65-21.98-103.288-26.85-114.58-36.933c-4.746-4.237 5.863-29.56 29.137-34.974zM91.425 308.056c33.376-.145 84.385 22.424 122.8 36.747l-1.79 11.67c-28.404-10.606-103.905-37.464-127.442-48.077c2.06-.22 4.207-.332 6.432-.34m270.234 53.803q.156-.01-.015.253c3.9 12.183-21.487 44.05-61.807 42.842c14.153-7.15 59.732-43.004 61.822-43.096z"/></svg></div>
+                    <div class="image-portrait"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#4ad66dff" d="M357.676 20.387q-3.917.014-7.856.29c-63.314 4.438-131.13 58.006-142.117 130.253L494 162.992V89.656c-8.09-7.792-16.415-15.25-24.953-22.177c-34.59-28.067-72.195-47.234-111.37-47.093zM125.55 40.812C89.363 40.94 51.743 55.725 18 86.825v81.3l172.107-18.815l-.363-.054c3.872-26.688 14.327-50.957 29.162-71.742c-26.973-24.13-59.536-36.82-93.357-36.7zm110.263 129.514c-24.49-.258-109.87 12.136-109.602 27.078c.46 25.55 104.433 51.553 94.726 53.018C122.553 265.27 67.968 265.427 35.34 295.2c-38.914 35.507 214.983 80.92 184.422 89.687c-57.204 16.412-107.82 36.256-109.002 88.414c-.17 7.52.8 14.385 2.705 20.7h54.945c-15.423-20.635-24.05-40.664-14.6-45.912c10.413 15.107 22.492 31.126 36.174 45.912h64.286c-19.474-9.912-51.732-29.408-50.594-49.424c1.6-28.17 66.37-47.758 69.883-47.758c0 0-48.786 26.384-49.867 49.866c-.767 16.68 22.317 36.985 35.69 47.316h51.976c-16.454-12.325-26.478-24.92-20.426-31.885c15.54 11.066 33.115 22.438 51.826 31.885h106.717c-56.74-15.988-102.683-32.67-115.225-53.127c-10.196-16.63 72.362-27.836 60.408-78.902c-5.79-24.738-58.24-41.094-203.222-62.626c-25.368-3.768 134.358-19.456 129.818-57.11c-2.65-21.98-103.288-26.85-114.58-36.933c-4.746-4.237 5.863-29.56 29.137-34.974zM91.425 308.056c33.376-.145 84.385 22.424 122.8 36.747l-1.79 11.67c-28.404-10.606-103.905-37.464-127.442-48.077c2.06-.22 4.207-.332 6.432-.34m270.234 53.803q.156-.01-.015.253c3.9 12.183-21.487 44.05-61.807 42.842c14.153-7.15 59.732-43.004 61.822-43.096z"/></svg></div>
+                    <div class="image-portrait"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15"><path fill="#4ad66dff" d="M7.5 1c-.3 0-.4.2-.6.4l-5.8 9.5c-.1.1-.1.3-.1.4c0 .5.4.7.7.7h11.6c.4 0 .7-.2.7-.7c0-.2 0-.2-.1-.4L8.2 1.4C8 1.2 7.8 1 7.5 1m0 1.5L10.8 8H10L8.5 6.5L7.5 8l-1-1.5L5 8h-.9z"/></svg></div>
+                    <div class="image-portrait"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="#4ad66dff" d="M357.676 20.387q-3.917.014-7.856.29c-63.314 4.438-131.13 58.006-142.117 130.253L494 162.992V89.656c-8.09-7.792-16.415-15.25-24.953-22.177c-34.59-28.067-72.195-47.234-111.37-47.093zM125.55 40.812C89.363 40.94 51.743 55.725 18 86.825v81.3l172.107-18.815l-.363-.054c3.872-26.688 14.327-50.957 29.162-71.742c-26.973-24.13-59.536-36.82-93.357-36.7zm110.263 129.514c-24.49-.258-109.87 12.136-109.602 27.078c.46 25.55 104.433 51.553 94.726 53.018C122.553 265.27 67.968 265.427 35.34 295.2c-38.914 35.507 214.983 80.92 184.422 89.687c-57.204 16.412-107.82 36.256-109.002 88.414c-.17 7.52.8 14.385 2.705 20.7h54.945c-15.423-20.635-24.05-40.664-14.6-45.912c10.413 15.107 22.492 31.126 36.174 45.912h64.286c-19.474-9.912-51.732-29.408-50.594-49.424c1.6-28.17 66.37-47.758 69.883-47.758c0 0-48.786 26.384-49.867 49.866c-.767 16.68 22.317 36.985 35.69 47.316h51.976c-16.454-12.325-26.478-24.92-20.426-31.885c15.54 11.066 33.115 22.438 51.826 31.885h106.717c-56.74-15.988-102.683-32.67-115.225-53.127c-10.196-16.63 72.362-27.836 60.408-78.902c-5.79-24.738-58.24-41.094-203.222-62.626c-25.368-3.768 134.358-19.456 129.818-57.11c-2.65-21.98-103.288-26.85-114.58-36.933c-4.746-4.237 5.863-29.56 29.137-34.974zM91.425 308.056c33.376-.145 84.385 22.424 122.8 36.747l-1.79 11.67c-28.404-10.606-103.905-37.464-127.442-48.077c2.06-.22 4.207-.332 6.432-.34m270.234 53.803q.156-.01-.015.253c3.9 12.183-21.487 44.05-61.807 42.842c14.153-7.15 59.732-43.004 61.822-43.096z"/></svg></div>
                 </div>
                 <div class="landescape-container">
-
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="#4ad66dff" d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"/></svg>
                 </div>
             </div>
         </div>
@@ -70,14 +78,14 @@
                     <div class="image-text-container">
                         <img src="../img/mountain1.jpg" alt="Not Available">
                         <div class="text-container">
-                            <icon></icon>
+                            <div class="icon-container"><i class="ri-map-pin-2-fill"></i></div>
                             <h3 class="heading-third">Camalig, Bicol, Philippines</h3>
                         </div>
                     </div>
                     <div class="image-text-container">
                         <img src="../img/mountain2.jpg" alt="Not Available">
                         <div class="text-container">
-                            <icon></icon>
+                            <div class="icon-container"><i class="ri-map-pin-2-fill"></i></div>
                             <h3 class="heading-third">Tabaco City, Bicol, Philippines</h3>
                         </div>
                     </div>
@@ -86,14 +94,14 @@
                     <div class="image-text-container">
                         <img src="../img/mountain3.jpg" alt="Not Available">
                         <div class="text-container">
-                            <icon></icon>
+                            <div class="icon-container"><i class="ri-map-pin-2-fill"></i></div>
                             <h3 class="heading-third">Uttarakhand, Munsiyari, Betulidhar</h3>
                         </div>
                     </div>
                     <div class="image-text-container">
                         <img src="../img/mountain4.jpg" alt="Not Available">
                         <div class="text-container">
-                            <icon></icon>
+                            <div class="icon-container"><i class="ri-map-pin-2-fill"></i></div>
                             <h3 class="heading-third">El Asnam, Wilaya de Tizi Ouzou, Algeria</h3>
                         </div>
                     </div>
@@ -105,7 +113,6 @@
 
         <div class="wildlife">
             <div class="tile-wrap">
-
                 <div class="section-one">
                     <div class="bear">
                         <div class="fade-effect">
@@ -138,7 +145,7 @@
                         <div class="text-container">
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: white;">Exploring nature has transformed the way I see the world. Every image tells a story of beauty and resilience.</h3>
-                                <p class="author" style="color: white;">– Sarah M.</p>
+                                <p class="author body-common" style="color: white;">– Sarah M.</p>
                             </div>
                         </div>
                     </div>
@@ -146,7 +153,7 @@
                         <div class="text-container">
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: white;">This gallery reminded me of how important it is to protect our planet for future generations.</h3>
-                                <p class="author" style="color: white;">– John D.</p>
+                                <p class="author body-common" style="color: white;">– John D.</p>
                             </div>
                         </div>
                     </div>
@@ -154,7 +161,7 @@
                         <div class="text-container">
                             <div class="text-holder">
                                 <h3 class="heading-third" style="color: white;">The best time to plant a tree was 20 years ago. The second-best time is now.</h3>
-                                <p class="author" style="color: white;">– Chinese Proverb</p>
+                                <p class="author body-common" style="color: white;">– Chinese Proverb</p>
                             </div>
                         </div>
                     </div>
@@ -164,7 +171,6 @@
         </div>
 
     </main>
-
 
 
 
@@ -202,19 +208,19 @@
                     <nav>
                         <ul class="list-container">
                             <li class="anchor-container">
-                                <a href="index.html" class="nav-link body-common">Home</a>
+                                <a href="../../index.html" class="nav-link body-common">Home</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">About</a>
+                                <a href="./about.html" class="nav-link body-common">About</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Gallery</a>
+                                <a href="./gallery.html" class="nav-link body-common">Gallery</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Blogs</a>
+                                <a href="./blogs.html" class="nav-link body-common">Blogs</a>
                             </li>
                             <li class="anchor-container">
-                                <a href="./assets/pages/" class="nav-link body-common">Contacts</a>
+                                <a href="./contact.html" class="nav-link body-common">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -234,7 +240,9 @@
                 <div class="social-navigation">
                     <p class="body-main">Social Media Links</p>
                     <div class="icon">
-
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-facebook-circle-fill"></i>
+                        <i class="ri-whatsapp-line"></i>
                     </div>
                 </div>
                 <hr>
@@ -246,7 +254,7 @@
                     <a href="#" class="Button-Anchor"><button class="Button-First body-main">Subscribe</button></a>
                 </div>
             </div>
-            <hr>
+            <hr class="visible">
             <div class="footer-lower">
                 <p class="body-common">
                     © 2025 Earthly Wonders. All Rights Reserved.
